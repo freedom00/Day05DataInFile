@@ -1,0 +1,23 @@
+﻿<Window x:Class="Day05DataInFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day05DataInFile"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="377.329" Width="618.323" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Name="miNew" Click="miNew_Click" />
+                <MenuItem Header="_Open" Name="miOpen" Click="miOpen_Click" />
+                <MenuItem Header="_Save" Name="miSave" Click="miSave_Click" />
+                <MenuItem Header="_Save As" Name="miSaveAs" Click="miSaveAs_Click" />
+                <Separator />
+                <MenuItem Header="_Exit" Name="miExit" Click="miExit_Click" />
+            </MenuItem>
+        </Menu>
+        <TextBox Name="tbText" Height="330" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="608" TextChanged="tbText_TextChanged" />
+    </DockPanel>
+</Window>
